@@ -1,7 +1,10 @@
 <template>
-    <div>Projects List</div>
-    <ProjectsListItem v-for="(project, index) in projectsStore.projects" :key="index" :title="project.title"
-        :description="project.description" :period="project.period" :techStack="project.techStack" :images="project.images" />
+    <div class="max-w-4xl grid m-auto text-left text-2xl font-bold">Projects I did:</div>
+    <div class="divide-y-8 divide-orange-600/25 w-full">
+        <ProjectsListItem v-for="(project, index) in projectsStore.projects" :key="index" :title="project.title"
+            :description="project.description" :period="project.period" :techStack="project.techStack"
+            :images="project.images" />
+    </div>
 </template>
 <script lang="ts" setup>
 import { defineAsyncComponent } from 'vue';

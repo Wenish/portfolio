@@ -1,13 +1,17 @@
 <template>
-<div class="bg-white max-w-xl p-2 mb-4">
-    <div class="text-xl">{{ title }}</div>
-    <div>{{ period }}</div>
-    <div>{{ description }}</div>
-    <div class="flex gap-2">
-        <div v-for="(tech, index) in techStack" :key="index">{{ tech }}</div>
-    </div>
-    <div>
-        <img v-for="(url, index) in images" :key="index" :src="url" />
+<div class="p-2 grid place-items-center">
+    <div class="max-w-4xl grid grid-cols-2 place-items-center">
+        <div>
+            <div class="text-xl">{{ title }}</div>
+            <div><i class="fa-regular fa-calendar"></i> {{ period }}</div>
+            <div>{{ description }}</div>
+            <div class="flex flex-wrap gap-2">
+                <div v-for="(tech, index) in techStack" :key="index" class="bg-orange-400 rounded-full px-2">{{ tech }}</div>
+            </div>
+        </div>
+        <div>
+            <img v-for="(url, index) in images" :key="index" :src="url" />
+        </div>
     </div>
 </div>
 </template>
