@@ -6,7 +6,7 @@
         <div class="text-xl font-extralight">I do application development and music production.</div>
     </div>
     <div>
-        <img alt="Animate Picture of Jonas Voland with effects" src="../assets/voland.gif" class="aspect-[8/3] shadow-xl object-cover w-full"/>
+        <img alt="Animate Picture of Jonas Voland with effects" src="../assets/volandOptimized.gif" class="aspect-[8/3] shadow-xl object-cover w-full"/>
     </div>
 </div>
 </template>
