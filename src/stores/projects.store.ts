@@ -112,7 +112,7 @@ export const useProjectsStore = defineStore(
         },
         {
           title: 'ICT Berufsbildung Modulbaukasten',
-          description: 'A internal web application for sharing and consuming railway knowledge',
+          description: 'Informational site for ICT modules.',
           dateStart: '01.08.2021',
           dateEnd: '01.05.2022',
           techStack: ['Azure DevOps', 'Angular', 'Node'],
