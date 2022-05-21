@@ -3,7 +3,7 @@
     <div class="max-w-4xl grid grid-cols-1 place-items-center md:grid-cols-2 px-4">
         <div class="content font-light">
             <div class="text-2xl pb-2">{{ title }}</div>
-            <div class="py-1 text-base"><i class="fa-regular fa-calendar"></i> {{ period }}</div>
+            <div class="py-1 text-base"><i class="fa-regular fa-calendar"></i> {{ dateStart }} - {{ dateEnd }}</div>
             <div class="text-lg">{{ description }}</div>
             <div class="flex flex-wrap gap-2 py-4">
                 <div v-for="(tech, index) in techStack" :key="index" class="bg-orange-400 rounded-full px-2 font-medium">{{ tech }}</div>
@@ -27,7 +27,11 @@ const props = defineProps({
         type: String,
         default: 'Description'
     },
-    period: {
+    dateStart: {
+        type: String,
+        default: '2020-2021'
+    },
+    dateEnd: {
         type: String,
         default: '2020-2021'
     },

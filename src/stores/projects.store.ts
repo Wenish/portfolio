@@ -11,7 +11,8 @@ export const useProjectsStore = defineStore(
     const projects = ref<{
       title: string,
       description: string,
-      period: string,
+      dateStart: string,
+      dateEnd: string,
       techStack: string[],
       images: string[]
     }[]>([])
@@ -21,21 +22,24 @@ export const useProjectsStore = defineStore(
         {
           title: 'Rooms and Ressources',
           description: 'Internal Room Booking System for Swisscom AG.',
-          period: '2020-2021',
+          dateStart: '01.01.2019',
+          dateEnd: '01.03.2020',
           techStack: ['Node', 'React'],
           images: [assetUrlRnr1]
         },
         {
           title: 'Dino Jump',
           description: 'A realtime multiplayer platformer game.',
-          period: '2020-2021',
+          dateStart: '01.02.2022',
+          dateEnd: '01.05.2022',
           techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase'],
           images: []
         },
         {
           title: 'SBB Resale',
           description: 'An E-commerce platform for resalling used goods.',
-          period: '2020-2021',
+          dateStart: '01.11.2021',
+          dateEnd: '01.05.2022',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB'],
           images: []
         }
