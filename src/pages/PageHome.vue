@@ -1,5 +1,4 @@
 <template>
-<div>Page Home</div>
 <WelcomeIntroduction></WelcomeIntroduction>
 <ProjectsList></ProjectsList>
 </template>
