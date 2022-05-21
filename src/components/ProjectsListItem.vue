@@ -44,7 +44,6 @@ const props = defineProps({
 <style scoped>
 .content {
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
 }
 img {
     image-rendering: crisp-edges;

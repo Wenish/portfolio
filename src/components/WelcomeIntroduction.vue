@@ -13,6 +13,5 @@
 <style scoped>
 .content {
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
 }
 </style>
