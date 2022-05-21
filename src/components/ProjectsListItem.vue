@@ -13,7 +13,11 @@
             </div>
         </div>
         <div>
-            <img v-for="(url, index) in images" :key="index" :src="url" class="aspect-[16/9] object-contain object-top" alt="" />
+            <div>
+                <Viewer :images="images">
+                    <img v-for="(url, index) in images" :key="index" :src="url" class="aspect-[16/9] object-contain object-top hover:saturate-[.75] cursor-pointer" alt="" />
+                </Viewer>
+            </div>
         </div>
     </div>
 </div>
@@ -22,6 +26,8 @@
 import { PropType } from 'vue';
 import { DateTime } from "luxon";
 import { computed } from '@vue/reactivity';
+import 'viewerjs/dist/viewer.css'
+import { component as Viewer } from "v-viewer"
 
 const props = defineProps({
     title: {
