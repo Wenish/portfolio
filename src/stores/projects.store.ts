@@ -49,7 +49,7 @@ export const useProjectsStore = defineStore(
         },
         {
           title: 'Swisscom News App',
-          description: 'Creating a internal news application with a content managment system.',
+          description: 'A internal news application with a content managment system.',
           dateStart: '01.03.2015',
           dateEnd: '01.03.2016',
           techStack: ['JavaScript', 'Node', 'Knockoutjs', 'Sharepoint', 'Azure DevOps'],
@@ -58,7 +58,7 @@ export const useProjectsStore = defineStore(
         },
         {
           title: 'Swisscom Partner Portal',
-          description: 'Creating a internal application for searching and booking personal coaches.',
+          description: 'A internal application for searching and booking personal coaches.',
           dateStart: '01.03.2016',
           dateEnd: '01.07.2017',
           techStack: ['JavaScript', 'Node', 'Knockoutjs', 'Sharepoint', 'Azure DevOps'],
