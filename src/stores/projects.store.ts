@@ -84,6 +84,15 @@ export const useProjectsStore = defineStore(
           images: []
         },
         {
+          title: 'Swisscom Appointment Finder',
+          description: 'An app for scheduling an interview with job applicants.',
+          dateStart: '01.09.2019',
+          dateEnd: '01.03.2020',
+          techStack: ['JavaScript', 'Vue', 'Node', 'Quasar', 'Azure DevOps'],
+          link: '',
+          images: []
+        },
+        {
           title: 'Swisscom Butler',
           description: 'A windows workplace support app.',
           dateStart: '01.08.2017',
