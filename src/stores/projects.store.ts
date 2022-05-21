@@ -34,7 +34,7 @@ export const useProjectsStore = defineStore(
           description: 'A realtime multiplayer platformer game.',
           dateStart: '01.02.2022',
           dateEnd: '01.05.2022',
-          techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase', 'Github', 'Heroku'],
+          techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase', 'Github', 'Heroku', 'Vite', 'Netlify'],
           link: 'https://dino-fun-land.web.app/',
           images: []
         },
@@ -43,7 +43,7 @@ export const useProjectsStore = defineStore(
           description: 'An E-commerce platform for resalling used goods.',
           dateStart: '01.11.2021',
           dateEnd: '01.05.2022',
-          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps'],
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite'],
           link: 'https://sbb-resale-prod.web.app/',
           images: []
         },
@@ -117,6 +117,24 @@ export const useProjectsStore = defineStore(
           dateEnd: '01.04.2018',
           techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Travis CI'],
           link: 'https://bfcards.app/',
+          images: []
+        },
+        {
+          title: 'Grid Map Editor',
+          description: 'A web application for creating 2D grid maps.',
+          dateStart: '01.06.2021',
+          dateEnd: '01.07.2021',
+          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite'],
+          link: 'https://grid-map-editor.web.app/',
+          images: []
+        },
+        {
+          title: 'Skill Picker',
+          description: 'A proof of concept for a game skill pick system.',
+          dateStart: '01.03.2022',
+          dateEnd: '01.04.2022',
+          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite'],
+          link: 'https://skill-picker.web.app/',
           images: []
         }
       ].sort((a, b) => (new Date(a.dateEnd) < new Date(b.dateEnd)) ? 1 : ((new Date(b.dateEnd) < new Date(a.dateEnd)) ? -1 : 0))
