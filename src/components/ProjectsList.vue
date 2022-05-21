@@ -3,8 +3,8 @@
         <div class="max-w-4xl grid m-auto text-left text-2xl font-normal px-4">Projects I did:</div>
         <div class="divide-y-8 divide-orange-600/25 w-full">
             <ProjectsListItem v-for="(project, index) in projectsStore.projects" :key="index" :title="project.title"
-                :description="project.description" :dateStart="project.dateStart" :dateEnd="project.dateEnd" :techStack="project.techStack"
-                :images="project.images" />
+                :description="project.description" :dateStart="project.dateStart" :dateEnd="project.dateEnd"
+                :techStack="project.techStack" :link="project.link" :images="project.images" />
         </div>
     </div>
 </template>

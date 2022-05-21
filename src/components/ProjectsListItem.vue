@@ -5,6 +5,9 @@
             <div class="text-2xl pb-2">{{ title }}</div>
             <div class="py-1 text-base"><i class="fa-regular fa-calendar"></i> {{ formattedDateStart }} - {{ formattedDateEnd }}</div>
             <div class="text-lg">{{ description }}</div>
+            <div v-if="link">
+                <a :href="link" target="_blank" class="text-orange-700 hover:underline">Visit Site</a>
+            </div>
             <div class="flex flex-wrap gap-2 py-4">
                 <div v-for="(tech, index) in techStack.sort((a, b) => a.localeCompare(b))" :key="index" class="bg-orange-400 rounded-full px-2 font-medium">{{ tech }}</div>
             </div>
@@ -40,6 +43,10 @@ const props = defineProps({
     techStack: {
         type: Array as PropType<Array<string>>,
         default: ['Node', 'TypeScript']
+    },
+    link: {
+        type: String,
+        default: ''
     },
     images: {
         type: Array as PropType<Array<string>>,

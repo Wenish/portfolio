@@ -14,6 +14,7 @@ export const useProjectsStore = defineStore(
       dateStart: string,
       dateEnd: string,
       techStack: string[],
+      link: string,
       images: string[]
     }[]>([])
 
@@ -25,6 +26,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.01.2019',
           dateEnd: '01.03.2020',
           techStack: ['JavaScript', 'Node', 'React', 'Azure DevOps'],
+          link: '',
           images: [assetUrlRnr1]
         },
         {
@@ -33,6 +35,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.02.2022',
           dateEnd: '01.05.2022',
           techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase', 'Github', 'Heroku'],
+          link: 'https://dino-fun-land.web.app/',
           images: []
         },
         {
@@ -41,6 +44,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.11.2021',
           dateEnd: '01.05.2022',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps'],
+          link: 'https://sbb-resale-prod.web.app/',
           images: []
         },
         {
@@ -49,6 +53,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.03.2015',
           dateEnd: '01.03.2016',
           techStack: ['JavaScript', 'Node', 'Knockoutjs', 'Sharepoint', 'Azure DevOps'],
+          link: '',
           images: []
         },
         {
@@ -57,6 +62,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.03.2016',
           dateEnd: '01.07.2017',
           techStack: ['JavaScript', 'Node', 'Knockoutjs', 'Sharepoint', 'Azure DevOps'],
+          link: '',
           images: []
         },
         {
@@ -65,6 +71,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.12.2014',
           dateEnd: '01.02.2015',
           techStack: ['JavaScript', 'jQuery', 'Sharepoint', 'Azure DevOps'],
+          link: '',
           images: []
         },
         {
@@ -73,6 +80,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.03.2016',
           dateEnd: '01.05.2016',
           techStack: ['JavaScript', 'Angular', 'Node', 'Sharepoint', 'Azure DevOps'],
+          link: '',
           images: []
         },
         {
@@ -81,6 +89,34 @@ export const useProjectsStore = defineStore(
           dateStart: '01.08.2017',
           dateEnd: '01.12.2018',
           techStack: ['C#', 'UWP', 'Microsoft Bot Framework', 'Azure Functions', 'Azure DevOps'],
+          link: '',
+          images: []
+        },
+        {
+          title: 'SBB Bahnknowhow',
+          description: 'A internal web application for sharing and consuming railway knowledge',
+          dateStart: '01.04.2020',
+          dateEnd: '01.08.2021',
+          techStack: ['Bitbucket', 'Angular', 'TypeScript', 'Node', 'Java', 'Sprint Boot', 'Neo4j', 'Openshift', 'Azure', 'Cypress'],
+          link: '',
+          images: []
+        },
+        {
+          title: 'ICT Berufsbildung Modulbaukasten',
+          description: 'A internal web application for sharing and consuming railway knowledge',
+          dateStart: '01.08.2021',
+          dateEnd: '01.05.2022',
+          techStack: ['Azure DevOps', 'Angular', 'Node'],
+          link: 'https://www.modulbaukasten.ch/',
+          images: []
+        },
+        {
+          title: 'BF Card Creator',
+          description: 'A web application for creating Battle Forge playing Cards.',
+          dateStart: '01.03.2018',
+          dateEnd: '01.04.2018',
+          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Travis CI'],
+          link: 'https://bfcards.app/',
           images: []
         }
       ].sort((a, b) => (new Date(a.dateEnd) < new Date(b.dateEnd)) ? 1 : ((new Date(b.dateEnd) < new Date(a.dateEnd)) ? -1 : 0))
