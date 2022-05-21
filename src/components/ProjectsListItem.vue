@@ -13,7 +13,7 @@
             </div>
         </div>
         <div>
-            <img v-for="(url, index) in images" :key="index" :src="url" class="aspect-[16/9] object-contain object-top" />
+            <img v-for="(url, index) in images" :key="index" :src="url" class="aspect-[16/9] object-contain object-top" alt="" />
         </div>
     </div>
 </div>
