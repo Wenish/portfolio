@@ -44,7 +44,7 @@ export const useProjectsStore = defineStore(
           dateStart: '01.11.2021',
           dateEnd: '01.05.2022',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite'],
-          link: '',
+          link: 'https://sbb-resale-prod.web.app/',
           images: []
         },
         {
