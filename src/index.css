@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    /* background-color: hsl(35deg 69% 90%); */
-    @apply bg-orange-300;
-}
+@layer base {
+    :root {
+        color-scheme: light;
+        /* brand foundation */
+        --brand-hue: 151;
+        --brand-saturation: 89%;
+        --brand-lightness: 45%;
+
+        --brand: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+
+        --text1: hsl(var(--brand-hue) calc(var(--brand-saturation) / 5) 5%);
+        --text2: hsl(var(--brand-hue) calc(var(--brand-saturation) / 10) 10%);
+
+        --link: hsl(var(--brand-hue) var(--brand-saturation) 12%);
+
+        --surface1: hsl(var(--brand-hue) 50% 80%);
+        --surface2: hsl(var(--brand-hue) 50% 60%);
+        --surface3: hsl(var(--brand-hue) 50% 50%);
+        --surface4: hsl(var(--brand-hue) 50% 40%);
+    }
+
+
+    html, body {
+        /* background-color: hsl(35deg 69% 90%); */
+        @apply bg-surface1 text-text1;
+    }
+  }
