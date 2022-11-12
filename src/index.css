@@ -6,21 +6,21 @@
     :root {
         color-scheme: light;
         /* brand foundation */
-        --brand-hue: 151;
+        --brand-hue: 180;
         --brand-saturation: 89%;
-        --brand-lightness: 45%;
+        --brand-lightness: 10%;
 
         --brand: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
 
-        --text1: hsl(var(--brand-hue) calc(var(--brand-saturation) / 5) 5%);
-        --text2: hsl(var(--brand-hue) calc(var(--brand-saturation) / 10) 10%);
+        --text1: hsl(var(--brand-hue) calc(var(--brand-saturation) / 5) 97%);
+        --text2: hsl(var(--brand-hue) calc(var(--brand-saturation) / 10) 90%);
 
-        --link: hsl(var(--brand-hue) var(--brand-saturation) 12%);
+        --link: hsl(var(--brand-hue) var(--brand-saturation) 89%);
 
-        --surface1: hsl(var(--brand-hue) 50% 80%);
-        --surface2: hsl(var(--brand-hue) 50% 60%);
-        --surface3: hsl(var(--brand-hue) 50% 50%);
-        --surface4: hsl(var(--brand-hue) 50% 40%);
+        --surface1: hsl(var(--brand-hue) 1% 4%);
+        --surface2: hsl(var(--brand-hue) 50% 12%);
+        --surface3: hsl(var(--brand-hue) 50% 16%);
+        --surface4: hsl(var(--brand-hue) 50% 19%);
     }
 
 
