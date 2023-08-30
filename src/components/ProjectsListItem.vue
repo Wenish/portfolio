@@ -23,9 +23,8 @@
 </div>
 </template>
 <script lang="ts" setup>
-import { PropType } from 'vue';
+import { PropType, computed } from 'vue';
 import { DateTime } from "luxon";
-import { computed } from '@vue/reactivity';
 import 'viewerjs/dist/viewer.css'
 import { component as Viewer } from "v-viewer"
 
