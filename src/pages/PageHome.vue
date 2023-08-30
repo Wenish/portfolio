@@ -1,13 +1,13 @@
 <template>
 <LayoutBasic>
     <WelcomeIntroduction></WelcomeIntroduction>
+    <ContactInformation />
     <ProjectsList></ProjectsList>
 </LayoutBasic>
 </template>
 <script lang="ts" setup>
-import { defineAsyncComponent } from 'vue';
-
-const LayoutBasic = defineAsyncComponent(() => import('../layouts/LayoutBasic.vue'))
-const WelcomeIntroduction = defineAsyncComponent(() => import('../components/WelcomeIntroduction.vue'))
-const ProjectsList = defineAsyncComponent(() => import('../components/ProjectsList.vue'))
+import LayoutBasic from '../layouts/LayoutBasic.vue';
+import WelcomeIntroduction from '../components/WelcomeIntroduction.vue';
+import ContactInformation from '../components/ContactInformation.vue'
+import ProjectsList from '../components/ProjectsList.vue';
 </script>

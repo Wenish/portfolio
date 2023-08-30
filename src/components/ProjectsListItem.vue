@@ -1,15 +1,20 @@
 <template>
 <div class="py-4 grid place-items-center">
-    <div class="w-full max-w-4xl grid grid-cols-1 place-items-center md:grid-cols-2 px-4">
+    <div class="w-full max-w-4xl grid grid-cols-1 place-items-center md:grid-cols-[3fr_2fr] px-4 gap-4">
         <div class="content font-light">
-            <div class="text-2xl pb-2">{{ title }}</div>
-            <div class="py-1 text-base"><i class="fa-regular fa-calendar"></i> {{ formattedDateStart }} - {{ formattedDateEnd }}</div>
+            <div class="text-2xl md:text-4xl pb-2 font-semibold">{{ title }}</div>
+            <div class="py-1 text-text2 flex gap-2">
+                <div>
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+                <div>{{ formattedDateStart }} - {{ formattedDateEnd }}</div>
+            </div>
             <div class="text-lg">{{ description }}</div>
-            <div v-if="link">
+            <div v-if="link" class="pt-2">
                 <a :href="link" target="_blank" class="text-link hover:underline">Visit Site →</a>
             </div>
             <div class="flex flex-wrap gap-2 py-4">
-                <div v-for="(tech, index) in techStack.sort((a, b) => a.localeCompare(b))" :key="index" class="bg-surface3 rounded-full px-2 font-medium">{{ tech }}</div>
+                <div v-for="(tech, index) in techStack.sort((a, b) => a.localeCompare(b))" :key="index" class="bg-surface3 px-2 pb-1 pt-0.5 font-medium grid items-center">{{ tech }}</div>
             </div>
         </div>
         <div>

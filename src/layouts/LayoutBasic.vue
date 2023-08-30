@@ -1,11 +1,11 @@
 <template>
-<div class="py-12">
-    <slot></slot>
-    <TheFooter></TheFooter>
+<div>
+    <TheHeader class="sticky top-0 backdrop-blur" />
+    <main><slot></slot></main>
+    <TheFooter />
 </div>
 </template>
 <script lang="ts" setup>
-import { defineAsyncComponent } from 'vue';
-
-const TheFooter = defineAsyncComponent(() => import('../components/TheFooter.vue'))
+import TheHeader from '../components/TheHeader.vue'
+import TheFooter from '../components/TheFooter.vue'
 </script>

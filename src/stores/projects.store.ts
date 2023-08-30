@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 import assetUrlRnr1 from '../assets/projects/rnr/search.webp'
+import assetUrlForcasty1 from '../assets/projects/forcastyExample.png'
 
 // useStore could be anything like useUser, useCart
 // the first argument is a unique id of the store across your application
@@ -18,13 +19,31 @@ export const useProjectsStore = defineStore(
       images: string[]
     }[]>([])
 
+    const projectsSorted = computed(() => {
+      return projects.value.sort((a, b) => {
+        const dateA = new Date(a.dateEnd.split('.').reverse().join('-'));
+        const dateB = new Date(b.dateEnd.split('.').reverse().join('-'));
+        
+        return dateB.getTime() - dateA.getTime();
+    });
+    })
+
     const loadProjects = () => {
       projects.value = [
+        {
+          title: 'Forcasty',
+          description: 'An app which lets you create a Burnup Chart and shared it via link or export it as an image.',
+          dateStart: '25.08.2023',
+          dateEnd: '27.08.2023',
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'MongoDB', 'Github', 'Github Actions', 'Vite', 'Tailwindcss', 'Railway'],
+          link: 'https://forcasty.com/',
+          images: [assetUrlForcasty1]
+        },
         {
           title: 'Swisscom Rooms and Ressources',
           description: 'Internal Room Booking System for Swisscom AG.',
           dateStart: '01.01.2019',
-          dateEnd: '01.03.2020',
+          dateEnd: '01.04.2020',
           techStack: ['JavaScript', 'Node', 'React', 'Azure DevOps'],
           link: '',
           images: [assetUrlRnr1]
@@ -34,7 +53,7 @@ export const useProjectsStore = defineStore(
           description: 'A realtime multiplayer platformer game.',
           dateStart: '01.02.2022',
           dateEnd: '01.05.2022',
-          techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase', 'Github', 'Heroku', 'Vite', 'Netlify'],
+          techStack: ['Unity', 'Node', 'Colyseus', 'TypeScript', 'Vue', 'C#', 'Firebase', 'Github', 'Github Actions', 'Heroku', 'Vite', 'Netlify'],
           link: 'https://dino-fun-land.web.app/',
           images: []
         },
@@ -42,9 +61,18 @@ export const useProjectsStore = defineStore(
           title: 'SBB Resale',
           description: 'An e-commerce platform for reselling used goods.',
           dateStart: '01.11.2021',
-          dateEnd: '01.05.2022',
-          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite'],
-          link: 'https://sbb-resale-prod.web.app/',
+          dateEnd: '31.12.2022',
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss'],
+          link: 'https://sbbresale.ch/',
+          images: []
+        },
+        {
+          title: 'SBB B2Rail (currently in development)',
+          description: 'An e-commerce platform for buying train infrastructur products. It builds on top of the sbbresale application.',
+          dateStart: '01.01.2023',
+          dateEnd: '30.08.2023',
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss'],
+          link: 'https://b2rail.sbb.ch/',
           images: []
         },
         {
@@ -133,7 +161,7 @@ export const useProjectsStore = defineStore(
           description: 'A web application for creating 2D grid maps.',
           dateStart: '01.06.2021',
           dateEnd: '01.07.2021',
-          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite'],
+          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite', 'Github Actions'],
           link: 'https://grid-map-editor.web.app/',
           images: []
         },
@@ -142,16 +170,17 @@ export const useProjectsStore = defineStore(
           description: 'A proof of concept for a game skill pick system.',
           dateStart: '01.03.2022',
           dateEnd: '01.04.2022',
-          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite'],
+          techStack: ['Github', 'Vue', 'Node', 'Firebase', 'Vite', 'Github Actions'],
           link: 'https://skill-picker.web.app/',
           images: []
         }
-      ].sort((a, b) => (new Date(a.dateEnd) < new Date(b.dateEnd)) ? 1 : ((new Date(b.dateEnd) < new Date(a.dateEnd)) ? -1 : 0))
+      ]
     }
     loadProjects()
 
     return {
-      projects
+      projects,
+      projectsSorted
     }
   }
 )

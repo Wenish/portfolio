@@ -6,8 +6,8 @@
     :root {
         color-scheme: light;
         /* brand foundation */
-        --brand-hue: 180;
-        --brand-saturation: 89%;
+        --brand-hue: 278;
+        --brand-saturation: 90%;
         --brand-lightness: 10%;
 
         --brand: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
