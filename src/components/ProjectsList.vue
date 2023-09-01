@@ -1,7 +1,9 @@
 <template>
-    <div class="py-8">
-        <div class="max-w-4xl grid m-auto text-left text-2xl font-bold px-4">Projects I did:</div>
-        <div class="divide-y-2 divide-surface2 w-full">
+    <div>
+        <div class="max-w-4xl grid m-auto text-left px-4">
+            <h2 class="text-3xl font-bold">Projects I did</h2>
+        </div>
+        <div class="w-full">
             <ProjectsListItem v-for="(project, index) in projectsStore.projectsSorted" :key="index" :title="project.title"
                 :description="project.description" :dateStart="project.dateStart" :dateEnd="project.dateEnd"
                 :techStack="project.techStack" :link="project.link" :images="project.images" />

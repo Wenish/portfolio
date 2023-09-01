@@ -1,6 +1,6 @@
 <template>
     <div class="px-8 py-6">
-        <div class="flex gap-6">
+        <div class="flex gap-6 max-w-7xl mx-auto">
             <a class="text-green-700 hover:text-green-600 inline-block" href="https://open.spotify.com/artist/2UMPXGNnurwP45ae7lPdAG" target="_blank">
                 <IconSpotify class=" h-6 w-6" />
             </a>
