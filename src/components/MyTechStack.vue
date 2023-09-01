@@ -3,37 +3,37 @@
         <h2 class="text-3xl font-bold">Tech I worked with</h2>
 
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in programmingLanguages" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in programmingLanguages" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in frameworks" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in frameworks" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in platorms" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in platorms" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in databases" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in databases" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in tools" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in tools" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in versionControls" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
+            <div v-for="item in versionControls" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
                 {{ item.name }}
             </div>
         </div>
