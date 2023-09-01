@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-4xl grid m-auto px-4 gap-4">
-        <h2 class="text-3xl font-bold">Tech I worked with in the past</h2>
+        <h2 class="text-3xl font-bold">Tech I worked with</h2>
 
         <div class="flex flex-wrap gap-4">
             <div v-for="item in programmingLanguages" :key="item.name" class="bg-slate-900 px-2 pb-1 pt-0.5 font-medium">
@@ -88,6 +88,9 @@ const frameworks = ref<{
     },
     {
         name: 'Colyseus'
+    },
+    {
+        name: 'Cypress'
     }
 ])
 
