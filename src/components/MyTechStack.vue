@@ -134,6 +134,9 @@ const databases = ref<{
     },
     {
         name: 'Neo4j'
+    },
+    {
+        name: 'Kafka'
     }
 ])
 
