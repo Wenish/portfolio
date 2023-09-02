@@ -13,7 +13,7 @@
             <div v-if="link" class="pt-2">
                 <a :href="link" target="_blank" class="text-white hover:underline">Visit Site →</a>
             </div>
-            <div class="flex flex-wrap gap-2 py-4">
+            <div class="flex flex-wrap gap-4 py-4">
                 <div v-for="(tech, index) in techStack.sort((a, b) => a.localeCompare(b))" :key="index" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium grid items-center">{{ tech }}</div>
             </div>
         </div>
