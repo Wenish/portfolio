@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^10.3.1",
     "luxon": "^2.4.0",
     "pinia": "^2.1.6",
     "v-viewer": "^3.0.10",

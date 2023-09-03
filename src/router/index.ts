@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getAnalytics, logEvent } from 'firebase/analytics';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,6 +15,14 @@ const router = createRouter({
       component: () => import('../pages/PageNotFound.vue')
     },
   ],
+})
+
+router.afterEach((to) => {
+  const analytics = getAnalytics()
+  logEvent(analytics, 'page_view', {
+    page_path: to.fullPath,
+    page_title: document.title
+  })
 })
 
 export default router
