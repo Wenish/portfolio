@@ -1,6 +1,6 @@
 <template>
 <div class="py-4 grid place-items-center">
-    <div class="w-full max-w-4xl grid grid-cols-1 place-items-center md:grid-cols-[3fr_2fr] px-4 gap-4">
+    <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-[3fr_2fr] px-4 gap-4">
         <div class="content font-light">
             <div class="text-2xl md:text-4xl pb-2 font-semibold">{{ title }}</div>
             <div class="py-1 text-text2 flex gap-2">
