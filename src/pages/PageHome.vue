@@ -2,7 +2,8 @@
 <LayoutBasic>
     <div class="relative z-10">
         <WelcomeIntroduction></WelcomeIntroduction>
-        <ContactInformation class="py-4 md:py-12" />
+        <ContactInformation class="py-4 md:py-8" />
+        <EducationInformation class="py-4 md:py-8" />
         <MyTechStack class="py-4 md:py-12" ></MyTechStack>
         <ProjectsList class="py-4 md:py-12" ></ProjectsList>
     </div>
@@ -12,6 +13,7 @@
 import LayoutBasic from '../layouts/LayoutBasic.vue';
 import WelcomeIntroduction from '../components/WelcomeIntroduction.vue';
 import ContactInformation from '../components/ContactInformation.vue'
+import EducationInformation from '../components/EducationInformation.vue';
 import MyTechStack from '../components/MyTechStack.vue';
 import ProjectsList from '../components/ProjectsList.vue';
 </script>
