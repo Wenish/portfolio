@@ -5,7 +5,7 @@
                 <a href="https://www.flaticon.com/free-icons/person" target="_blank" title="person icons">Person icon created by Vitaly
                     Gorbachev - Flaticon</a>
             </div>
-            <div class="py-4 text-lg">© 2023 Jonas Voland</div>
+            <div class="py-4 text-lg">© 2024 Jonas Voland</div>
         </div>
     </div>
 </template>
