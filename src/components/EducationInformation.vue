@@ -2,7 +2,7 @@
     <div class="max-w-4xl grid m-auto text-left font-bold px-4">
         <h2 class="text-3xl font-bold">Education</h2>
         <div>Study, FFHS Zürich - CAS Full-Stack Development (Currently ongoing)</div>
-        <div>Study, TEKO Bern - Dipl. Informatiker/in HF Fachrichtung Applikation (Currently ongoing)</div>
+        <div>Study, TEKO Bern - Advanced Federal Diploma of Higher Education in Information Technology (Currently ongoing)</div>
         <div>Further study, Bern - Scrum Alliance Scum Master (June 2023)</div>
         <div>Further study, Bern - Leading SAFe (April 2023)</div>
         <div>Further study, Bern - Berufsbildner (June 2020)</div>
