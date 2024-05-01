@@ -3,8 +3,7 @@
         <div class="text-4xl font-bold content">
             <div class="text-6xl">HI, I AM</div>
             <div class="text-4xl sm:text-5xl py-4">JONAS VOLAND</div>
-            <div class="text-xl font-light">Professional software engineer and part time music producer.</div>
-            <div class="text-xl font-light">I was born in 1995 and located in Switzerland.</div>
+            <div class="text-xl font-light">Professional software engineer, part time music producer and located in Switzerland.</div>
         </div>
         <div>
             <img alt="Animate Picture of Jonas Voland with effects" src="../assets/volandOptimized.gif"
