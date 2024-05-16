@@ -67,10 +67,10 @@ export const useProjectsStore = defineStore(
           images: []
         },
         {
-          title: 'SBB B2Rail (currently in development)',
+          title: 'SBB B2Rail',
           description: 'An e-commerce platform for buying train infrastructur products. It builds on top of the sbbresale application.',
           dateStart: '01.01.2023',
-          dateEnd: '30.08.2023',
+          dateEnd: '01.04.2023',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss'],
           link: 'https://b2rail.sbb.ch/',
           images: []
