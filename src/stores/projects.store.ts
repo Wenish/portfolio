@@ -132,7 +132,7 @@ export const useProjectsStore = defineStore(
         {
           title: 'SBB Bahnknowhow',
           description: 'A internal web application for sharing and consuming railway knowledge.',
-          dateStart: '01.04.2020',
+          dateStart: '01.05.2020',
           dateEnd: '01.08.2021',
           techStack: ['Bitbucket', 'Angular', 'TypeScript', 'Node', 'Java', 'Sprint Boot', 'Neo4j', 'Openshift', 'Azure', 'Cypress'],
           link: '',
