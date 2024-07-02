@@ -56,6 +56,12 @@ const programmingLanguages = ref<{
     },
     {
         name: 'C#'
+    },
+    {
+        name: 'Python'
+    },
+    {
+        name: 'Go'
     }
 ])
 
