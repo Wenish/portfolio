@@ -31,6 +31,15 @@ export const useProjectsStore = defineStore(
     const loadProjects = () => {
       projects.value = [
         {
+          title: 'Virtual Q',
+          description: 'A web app which allows the user to manage virtual ticket queues.',
+          dateStart: '01.03.2024',
+          dateEnd: '30.06.2024',
+          techStack: ['Node', 'React', 'TypeScript', 'Tailwindcss', 'Python', 'Django', 'GitLab', 'Vitest', 'JSX'],
+          link: 'https://virtual-q.jonas.pibern.ch/',
+          images: []
+        },
+        {
           title: 'Forcasty',
           description: 'An app which lets you create a Burnup Chart and shared it via link or export it as an image.',
           dateStart: '25.08.2023',
