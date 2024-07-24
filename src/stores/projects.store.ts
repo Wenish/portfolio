@@ -70,7 +70,7 @@ export const useProjectsStore = defineStore(
           title: 'SBB Resale',
           description: 'An e-commerce platform for reselling used goods.',
           dateStart: '01.11.2021',
-          dateEnd: '31.12.2022',
+          dateEnd: '31.07.2024',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss', 'Cypress'],
           link: 'https://sbbresale.ch/',
           images: []
