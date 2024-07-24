@@ -71,7 +71,7 @@ export const useProjectsStore = defineStore(
           description: 'An e-commerce platform for reselling used goods.',
           dateStart: '01.11.2021',
           dateEnd: '31.12.2022',
-          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss'],
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss', 'Cypress'],
           link: 'https://sbbresale.ch/',
           images: []
         },
@@ -80,7 +80,7 @@ export const useProjectsStore = defineStore(
           description: 'An e-commerce platform for buying train infrastructur products. It builds on top of the sbbresale application.',
           dateStart: '01.01.2023',
           dateEnd: '01.04.2023',
-          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss'],
+          techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'Azure', 'MongoDB', 'Azure DevOps', 'Vite', 'Tailwindcss', 'Cypress'],
           link: 'https://b2rail.sbb.ch/',
           images: []
         },
@@ -152,7 +152,7 @@ export const useProjectsStore = defineStore(
           description: 'Informational site for ICT modules.',
           dateStart: '01.08.2021',
           dateEnd: '01.05.2022',
-          techStack: ['Azure DevOps', 'Angular', 'Node'],
+          techStack: ['Azure DevOps', 'Angular', 'Node', 'Cypress'],
           link: 'https://www.modulbaukasten.ch/',
           images: []
         },
