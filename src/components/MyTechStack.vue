@@ -3,44 +3,33 @@
         <h2 class="text-3xl font-bold">Tech I worked with</h2>
 
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in programmingLanguages" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in programmingLanguages" :key="item.name" :name="item.name" />
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in frameworks" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in frameworks" :key="item.name" :name="item.name" />
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in platorms" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in platorms" :key="item.name" :name="item.name" />
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in databases" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in databases" :key="item.name" :name="item.name" />
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in tools" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in tools" :key="item.name" :name="item.name" />
         </div>
         
         <div class="flex flex-wrap gap-4">
-            <div v-for="item in versionControls" :key="item.name" class="bg-gray-200 text-black px-2 pb-1 pt-0.5 font-medium">
-                {{ item.name }}
-            </div>
+            <BadgeItem v-for="item in versionControls" :key="item.name" :name="item.name" />
         </div>
     </div>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
+import BadgeItem from './BadgeItem.vue';
 
 const programmingLanguages = ref<{
     name: string
