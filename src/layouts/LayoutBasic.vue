@@ -1,6 +1,8 @@
 <template>
 <div>
+    <!--
     <TheHeader class="sticky top-0 backdrop-blur z-20" />
+    -->
     <main><slot></slot></main>
     <TheFooter />
 </div>
