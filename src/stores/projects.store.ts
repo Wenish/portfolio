@@ -45,7 +45,7 @@ export const useProjectsStore = defineStore(
           dateStart: '25.08.2023',
           dateEnd: '27.08.2023',
           techStack: ['Node', 'TypeScript', 'Vue', 'Nestjs', 'Firebase', 'MongoDB', 'Github', 'Github Actions', 'Vite', 'Tailwindcss', 'Railway'],
-          link: 'https://forcasty.com/',
+          link: 'https://forcasty-client.web.app/',
           images: [assetUrlForcasty1]
         },
         {
